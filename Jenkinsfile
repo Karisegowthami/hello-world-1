@@ -1,18 +1,17 @@
 pipeline {
     agent any
-   tools {
-     maven 'mvn'
- }
-   stages {
+tools {
+  maven 'mannn'
+}
+
+    stages {
         stage('clone the code') {
             steps {
-            sh 'git clone https://github.com/anilkumar3577/hello-world-1.git'   
+            sh 'git clone https://github.com/Karisegowthami/hello-world-1.git'
             }
         }
-        stage('build my code') {
+         stage('build my code') {
             steps {
-             sh 'mvn package'
-            }
-        }
-    }
+            sh 'maven package'
+   }
 }
